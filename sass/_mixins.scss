@@ -1,0 +1,7 @@
+@mixin responsive-header($pic_height) {
+  position: relative;
+  top: 0;
+  height: $pic_height;
+  width: auto;
+  margin: 0;
+}

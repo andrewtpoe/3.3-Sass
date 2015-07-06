@@ -1,0 +1,97 @@
+.post__header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-image: url('./images/Bacon-Eggs.jpg');
+  background-position: center center;
+  background-size: cover;
+  color: #FFF;
+  text-shadow: 0 -1px 0 #000;
+  @media all and (min-width: 501px) and (max-width: 1000px) {
+    @include responsive-header(500px)
+  }
+  @media (max-width: 500px) {
+    @include responsive-header(700px)
+  }
+}
+.post__headerOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.2);
+  > h1 {
+    margin: 50px;
+    font-size: 50px;
+    line-height: 75px;
+    @media all and (max-width: 500px) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+  > p {
+    margin: 50px;
+  }
+}
+.post__headerLogo {
+  font-size: 30px;
+  margin: 30px 0px 20px 50px;
+  display: inline-block;
+  @media all and (min-width: 501px) and (max-width: 1000px) {
+    margin: 30px 0px 20px 50px;
+  }
+  @media all and (max-width: 500px) {
+    display: block;
+    margin: 15px 15px 15px 50px
+  }
+}
+.post__headerButton {
+  display: inline-block;
+  margin: 30px 50px 0px 0px;
+  float: right;
+  border: 2px solid #fff;
+  background: none;
+  font-size: 25px;
+  color: inherit;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  transform: translateZ(0);
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 75px rgba(255, 255, 255, 0.6);
+  }
+  @media all and (min-width: 501px) and (max-width: 950px) {
+    margin: 25px 50px 0px 0px;
+  }
+  @media all and (max-width: 500px) {
+    display: block;
+    margin: 0px 45% 15px 50px;
+    float: left;
+  }
+}
+.post__headerNav {
+  display: inline-block;
+  list-style: none;
+  margin: 5px 0px 20px 50px;
+  padding: 0;
+  > li {
+    display: inline-block;
+    @media all and (max-width: 500px) {
+      display: block;
+    }
+  }
+  > li > a {
+    color: inherit;
+    text-decoration: none;
+  }
+  > li > a:hover {
+  color: #d4d4d4;
+  }
+}
+.post__headerNavBar {
+  border: 1px solid #fff;
+  height: 0px;
+  width: auto;
+}

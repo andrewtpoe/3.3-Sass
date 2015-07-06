@@ -1,0 +1,25 @@
+.post__contentWrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  margin-left: 50%;
+  padding: 40px;
+  line-height: 27px;
+  color: #6d6d6d;
+  overflow: scroll;
+  @media all and (max-width: 1000px) {
+    position: relative;
+    width: auto;
+    margin: 0;
+  }
+}
+.post__menuButton {
+  height: 14%;
+  text-align: right;
+}
+.post__content > img {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
